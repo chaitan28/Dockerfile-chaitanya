@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine              # openjdk:8-jdk-alpine base image provides a minimal Linux environment with Java 8 installed
 WORKDIR /app                           #  sets working directory inside the Docker container to /app
 COPY ./target/*.jar /app/app.jar       # this will copies the .jar file in the target folder of host machine into /app folder of the container and renames it app.jar
-CMD ["java", "-jar", "/app.jar"]       # start the Java application 
+CMD ["java", "-jar", "/app/app.jar"]       # start the Java application 
